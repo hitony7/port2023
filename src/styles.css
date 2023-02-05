@@ -81,12 +81,36 @@ a:hover{
     .project-container{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .project-card {
+        width: 70vw !important;
+        height: 500px;
+        box-shadow: 5px 5px 20px grey;
+        margin: 10px;
     }
 
     .infop{
         margin: 0;
         font-size: 20px;
         font-weight: 100;
+    }
+
+    .social-icons{
+        height: 200;
+        width: 200;
+    }
+
+
+    .headshot-container {
+        display:none;
+    
+    }
+    
+    .headshot {
+      display: none;
     }
 }
 
