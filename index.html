@@ -9,9 +9,10 @@
         <title> Tony Wong | Portfolio </title>
         <link rel="icon" type="image/x-icon" href="src/image/man-computer.png">
         <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <section class="hero">
+        <section class="hero animate-bg">
             <nav>
             <img class="logo" src="src/image/man-computer.png" alt="Man with laptop">
                 <ul id="nav-list">
@@ -51,44 +52,66 @@
             </div>
             <div class="headshot-container">
                 <img class="headshot" src="src/image/me.png" alt="tony wong photo">
+                <div class="overlay">
+                  <p class="text">I'm Calgary Based!</p>
+                </div>
             </div>
         </section>
         <section id ="project" class= "project-sub">
             <h2>Projects</h2>
-            <div class="project-container">
-                <div class="project-card">
-                    <img class="project-image" src="src/image/api.png" alt="some project">
+            <div class="card-container">
+                <div class="card" id="card1">
+                  <img src="src/image/api.png" alt="card 1 image">
+                  <div class="card-text">
                     <h3>Database API For Stadium Management</h3>
-                    <p class="subtext">The database was constructed to resolve challenges in data management within stadiums, including ticket sales, facility maintenance, etc. It integrates with 20+ API endpoints to serve the needs of the four types of end users.<p>
+                    <p class="subtext">The database was constructed to resolve challenges in data management within stadiums, including ticket sales, facility maintenance, etc. It integrates with 20+ API endpoints to serve the needs of the four types of end users.</p>
                     <hr/>
                     <p class="subtext"><a class="project-link" href="https://github.com/hitony7/CPSC471_API">GitHub Project Repo & Read Me </a> </p>
                     <hr/>
                     <p class="subtext"><a class="project-link" href="https://documenter.getpostman.com/view/11109555/Szf52oX8?version=latest"> Postman Documentation</a></p>
+                  </div>
                 </div>
-                <div class="project-card">
-                    <img class="project-image" src="src/image/Journal.PNG" alt="some project">
+                <div class="card" id="card2">
+                  <img src="src/image/Journal.PNG" alt="card 2 image">
+                  <div class="card-text">
                     <h3>Academic Journal Logging System for Universities</h3>
-                    <p class="subtext">A journal logging system built using Java web (Vaadin) technology, utilizing sound methodology and agile development practices. Admins, Researchers, Editors, and Reviewers have been provided with role-based interfaces and proper permissions. <p>
+                    <p class="subtext">A journal logging system built using Java web (Vaadin) technology, utilizing sound methodology and agile development practices. Admins, Researchers, Editors, and Reviewers have been provided with role-based interfaces and proper permissions.</p>
                     <hr/>
                     <p class="subtext"> <a class="project-link" href="https://github.com/hitony7/SENG300-Project">GitHub Project Repo & Read Me</a> </p>
+                  </div>
                 </div>
-                <div class="project-card">
-                    <img class="project-image" src="src/image/trash.png" alt="some project">
+                <div class="card" id="card3">
+                  <img src="src/image/trash.png" alt="card 3 image">
+                  <div class="card-text">
                     <h3>Moblie Auto Garbage Sorter</h3>
-                    <p class="subtext"> Classifies the type of garbage from a picture taken from a smartphone. This ensures people don't put their garbage in the wrong bin ;). We developed this application in for the Code the Change Hackathon 2019 sponsored by Benevity and won the People's Choice award.<p>
+                    <p class="subtext">Classifies the type of garbage from a picture taken from a smartphone. This ensures people don't put their garbage in the wrong bin ;). We developed this application in for the Code the Change Hackathon 2019 sponsored by Benevity and won the People's Choice award.</p>
                     <hr/>
                     <p class="subtext"><a class="project-link" href="https://github.com/hitony7/Auto-Garbage-Sorter">GitHub Project Repo & Read Me </a></p>
+                  </div>
                 </div>
-                <div class="project-card">
-                    <img class="project-image" src="src/image/shark.PNG" alt="some project">
+                <div class="card" id="card4">
+                  <img src="src/image/shark.PNG" alt="card 4 image">
+                  <div class="card-text">
                     <h3>Sharkies Art NFT Project</h3>
-                    <p class="subtext">Created in Etheruem using Solidity language to create a smart contract. Website coded in React with ability to interact with Metamask wallet to allow for client minting. Minted over 100+ unique procedural generated art sharks.<p>
+                    <p class="subtext">Created in Etheruem using Solidity language to create a smart contract. Website coded in React with ability to interact with Metamask wallet to allow for client minting. Minted over 100+ unique procedural generated art sharks.</p>
                     <hr/>
                     <p class="subtext"><a class="project-link" href="https://opensea.io/collection/sharkies"> Opensea marketplace </a></p>
                     <hr/>
                     <p class="subtext"><a class="project-link" href="https://etherscan.io/address/0x47218a809eb6026111d569d7658da307020c8e21#code">Etherscan code </a> </p>
+                  </div>
                 </div>
-            </div>
+              </div>
+
+              <div class="popup-container">
+                <div class="popup" id="popup1">
+                  <img src="https://via.placeholder.com/700x400" alt="card 1 image">
+                  <div class="popup-text">
+                    <h3>Card 1 Title</h3>
+                    <p class="subtext">Card 1 Description </p>
+                  </div>
+                </div>
+              </div>
+    
         </section>
         <footer id="contact">
             <h3 class="footer-title">Contact Me</h3>
