@@ -1,129 +1,339 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="src/styles.css"/>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <script src="https://kit.fontawesome.com/772beed49f.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-        <title> Tony Wong | Portfolio </title>
-        <link rel="icon" type="image/x-icon" href="src/image/man-computer.png">
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        <section class="hero animate-bg">
-            <nav>
-            <img class="logo" src="src/image/man-computer.png" alt="Man with laptop">
-                <ul id="nav-list">
-                    <li><a href="#aboutme">About Me</a></li>
-                    <li><a href="#project">Projects</a></li>
-                    <li><a href="#contact">Contact me</a></li>
-                </ul>
-                <button class="hamburger" id="hamburger">
-                    <i class="fas fa-bars"></i>
-                </button>
-            </nav>
-            <div class="hero-area">
-                <div class="hero-text">
-                    <h1>Tony Wong</h1>
-                    <p1>Full Stack Developer</p1>
-                    <div class="button"><a href="#aboutme"> About me</a></div>
-                    
-                </div>
-                <div class="socials">
-                    <div>
-                        <a href ="https://www.linkedin.com/in/tonywong7/" class="social-icons">
-                            <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="80" height="80" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </a>
-                    <div>
-                    <a href= "https://github.com/hitony7" class="social-icons">
-                        <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" width="80" height="80" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                    </a>
-                    </div>
-                    <a href= "https://medium.com/@tywong11" class="social-icons">
-                      <svg class="icon" xmlns="http://www.w3.org/2000/svg"fill="#ffffff" width="80" height="80" viewBox="0 0 24 24"> <path d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.237 4.999-5 5zm.97-5.649v-.269l-1.247-1.224c-.11-.084-.165-.222-.142-.359v-8.998c-.023-.137.032-.275.142-.359l1.277-1.224v-.269h-4.422l-3.152 7.863-3.586-7.863h-4.638v.269l1.494 1.799c.146.133.221.327.201.523v7.072c.044.255-.037.516-.216.702l-1.681 2.038v.269h4.766v-.269l-1.681-2.038c-.181-.186-.266-.445-.232-.702v-6.116l4.183 9.125h.486l3.593-9.125v7.273c0 .194 0 .232-.127.359l-1.292 1.254v.269h6.274z"/></svg>
-                    </a>
-                  </div>
-                </div>
-            </div>
-        </section>
-        <section id="aboutme"class="sub-section">
-            <div class="information">
-                <h2>About Me</h2>
-                <p class="infop"> 👋 Hey! I am Tony Wong, a Full Stack Developer with a passion for developing cutting-edge solutions. I have a background in both economics and computer science from the University of Calgary. I believe in continuously learning and have a strong fascination with fintech. The interplay of creativity, logic, technology, and an abundance of opportunities inspire my enthusiasm for software development. When I'm not working, I like to spend my free time gaming or participating in sports with friends.</p>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tony Wong | Portfolio</title>
 
-            </div>
-            <div class="headshot-container">
-                <img class="headshot" src="src/image/me.png" alt="tony wong photo">
-                <div class="overlay">
-                  <p class="text">I'm Calgary Based!</p>
-                </div>
-            </div>
-        </section>
-        <section id ="project" class= "project-sub">
-            <h2>Projects</h2>
-            <div class="card-container">
-                <div class="card" id="card1">
-                  <img src="src/image/api.png" alt="card 1 image">
-                  <div class="card-text">
-                    <h3>Database API For Stadium Management</h3>
-                    <p class="subtext">The database was constructed to resolve challenges in data management within stadiums, including ticket sales, facility maintenance, etc. It integrates with 20+ API endpoints to serve the needs of the four types of end users.</p>
-                    <hr/>
-                    <p class="subtext"><a class="project-link" href="https://github.com/hitony7/CPSC471_API">GitHub Project Repo & Read Me </a> </p>
-                    <hr/>
-                    <p class="subtext"><a class="project-link" href="https://documenter.getpostman.com/view/11109555/Szf52oX8?version=latest"> Postman Documentation</a></p>
-                  </div>
-                </div>
-                <div class="card" id="card2">
-                  <img src="src/image/Journal.PNG" alt="card 2 image">
-                  <div class="card-text">
-                    <h3>Academic Journal Logging System for Universities</h3>
-                    <p class="subtext">A journal logging system built using Java web (Vaadin) technology, utilizing sound methodology and agile development practices. Admins, Researchers, Editors, and Reviewers have been provided with role-based interfaces and proper permissions.</p>
-                    <hr/>
-                    <p class="subtext"> <a class="project-link" href="https://github.com/hitony7/SENG300-Project">GitHub Project Repo & Read Me</a> </p>
-                  </div>
-                </div>
-                <div class="card" id="card3">
-                  <img src="src/image/trash.png" alt="card 3 image">
-                  <div class="card-text">
-                    <h3>Mobile Auto Garbage Sorter</h3>
-                    <p class="subtext">Classifies the type of garbage from a picture taken from a smartphone. This ensures people don't put their garbage in the wrong bin ;). We developed this application in for the Code the Change Hackathon 2019 sponsored by Benevity and won the People's Choice award.</p>
-                    <hr/>
-                    <p class="subtext"><a class="project-link" href="https://github.com/hitony7/Auto-Garbage-Sorter">GitHub Project Repo & Read Me </a></p>
-                  </div>
-                </div>
-                <div class="card" id="card4">
-                  <img src="src/image/shark.PNG" alt="card 4 image">
-                  <div class="card-text">
-                    <h3>Sharkies Art NFT Project</h3>
-                    <p class="subtext">Created in Etheruem using Solidity language to create a smart contract. Website coded in React with ability to interact with Metamask wallet to allow for client minting. Minted over 100+ unique procedural generated art sharks.</p>
-                    <hr/>
-                    <p class="subtext"><a class="project-link" href="https://opensea.io/collection/sharkies"> Opensea marketplace </a></p>
-                    <hr/>
-                    <p class="subtext"><a class="project-link" href="https://etherscan.io/address/0x47218a809eb6026111d569d7658da307020c8e21#code">Etherscan code </a> </p>
-                  </div>
-                </div>
-              </div>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="src/image/man-computer.png" />
 
-              <div class="popup-container">
-                <div class="popup" id="popup1">
-                  <img src="https://via.placeholder.com/700x400" alt="card 1 image">
-                  <div class="popup-text">
-                    <h3>Card 1 Title</h3>
-                    <p class="subtext">Card 1 Description </p>
-                  </div>
-                </div>
-              </div>
-    
-        </section>
-        <footer id="contact">
-            <h3 class="footer-title">Contact Me</h3>
-            <p ><a href="https://www.linkedin.com/in/tonywong7/"> Message me on LinkedIn </a> <p>
-            <a href = "mailto: tywong11@gmail.com">Send Email</a>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;0,700;0,800;1,400&display=swap"
+      rel="stylesheet"
+    />
 
-        </footer>
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/styles.css" />
 
-        <script src="src/app.js"></script>
-    </body>
+    <!-- Icons (Font Awesome) -->
+    <script
+      src="https://kit.fontawesome.com/772beed49f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- ===== HERO / HEADER ===== -->
+    <section class="hero animate-bg" id="top">
+      <nav>
+        <img
+          class="logo"
+          src="src/image/man-computer.png"
+          alt="Man with laptop"
+        />
+
+        <ul id="nav-list">
+          <li><a href="#aboutme">About Me</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#contact">Contact me</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Toggle dark mode"
+          >
+            <i class="fas fa-moon"></i>
+          </button>
+          <button
+            class="hamburger"
+            id="hamburger"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div class="hero-area">
+        <div class="hero-text fade-in-up">
+          <h1>Tony Wong</h1>
+          <p class="hero-subtitle">Software Developer</p>
+          <div class="button">
+            <a href="#aboutme">About me</a>
+          </div>
+        </div>
+
+        <div class="socials fade-in-up">
+          <a
+            href="https://www.linkedin.com/in/tonywong7/"
+            class="social-icons"
+            aria-label="LinkedIn"
+          >
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#ffffff"
+              width="80"
+              height="80"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://github.com/hitony7"
+            class="social-icons"
+            aria-label="GitHub"
+          >
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#ffffff"
+              width="80"
+              height="80"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+              />
+            </svg>
+          </a>
+
+          <a
+            href="https://medium.com/@tywong11"
+            class="social-icons"
+            aria-label="Medium"
+          >
+            <svg
+              class="icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#ffffff"
+              width="80"
+              height="80"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h14c2.762 0 5 2.239 5 5v14c0 2.761-2.237 4.999-5 5zm.97-5.649v-.269l-1.247-1.224c-.11-.084-.165-.222-.142-.359v-8.998c-.023-.137.032-.275.142-.359l1.277-1.224v-.269h-4.422l-3.152 7.863-3.586-7.863h-4.638v.269l1.494 1.799c.146.133.221.327.201.523v7.072c.044.255-.037.516-.216.702l-1.681 2.038v.269h4.766v-.269l-1.681-2.038c-.181-.186-.266-.445-.232-.702v-6.116l4.183 9.125h.486l3.593-9.125v7.273c0 .194 0 .232-.127.359l-1.292 1.254v.269h6.274z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ME ===== -->
+    <section id="aboutme" class="sub-section">
+      <div class="information fade-in-up">
+        <h2>About Me</h2>
+        <p class="infop">
+          👋 Hey! I’m Tony, a Calgary-based Software Developer with a background
+          in economics and computer science. I consider myself a problem solver
+          who is versatile and adaptable to new technologies and environments.
+          I’ve worked across traditional web stacks, web scraping, automation
+          scripts, RESTful APIs, and Web3 applications.
+        </p>
+        <p class="infop">
+          I’m especially interested in fintech, data-driven products, and the
+          gaming industry. When I’m not coding, you’ll usually find me gaming or
+          playing sports with friends.
+        </p>
+      </div>
+
+      <div class="headshot-container fade-in-up">
+        <img class="headshot" src="src/image/me.jpg" alt="Photo of Tony Wong" />
+        <div class="overlay">
+          <p class="text">Based in Calgary, Canada 🍁</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section id="project" class="project-sub">
+      <h2>Projects</h2>
+
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="backend">APIs</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="blockchain">
+          Blockchain / Web3
+        </button>
+      </div>
+
+      <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card fade-in-up" id="card1" data-category="backend">
+          <img
+            src="src/image/api.png"
+            alt="Stadium management API screenshot"
+          />
+          <div class="card-text">
+            <h3>Database API for Stadium Management</h3>
+            <p class="subtext">
+              A relational database and REST API that streamlines ticket sales,
+              facility maintenance, and staff operations. Over 20 endpoints
+              power four different user roles, enabling analytics and
+              operational visibility.
+            </p>
+            <hr />
+            <p class="subtext">
+              <a
+                class="project-link"
+                href="https://github.com/hitony7/CPSC471_API"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Project Repo &amp; README
+              </a>
+            </p>
+            <hr />
+            <p class="subtext">
+              <a
+                class="project-link"
+                href="https://documenter.getpostman.com/view/11109555/Szf52oX8?version=latest"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Postman Documentation
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card fade-in-up" id="card2" data-category="web">
+          <img
+            src="src/image/Journal.PNG"
+            alt="Academic journal logging system UI"
+          />
+          <div class="card-text">
+            <h3>Academic Journal Logging System</h3>
+            <p class="subtext">
+              A Java (Vaadin) web app that supports Admins, Researchers,
+              Editors, and Reviewers with role-based interfaces. Built with
+              agile practices and a focus on traceable review workflows for
+              universities.
+            </p>
+            <hr />
+            <p class="subtext">
+              <a
+                class="project-link"
+                href="https://github.com/hitony7/SENG300-Project"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Project Repo &amp; README
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card fade-in-up" id="card3" data-category="mobile">
+          <img src="src/image/trash.png" alt="Garbage sorter mobile app" />
+          <div class="card-text">
+            <h3>Mobile Auto Garbage Sorter</h3>
+            <p class="subtext">
+              A mobile application that classifies garbage from a smartphone
+              photo to pick the correct bin. Built for the Code the Change 2019
+              hackathon sponsored by Benevity and awarded the People's Choice
+              prize.
+            </p>
+            <hr />
+            <p class="subtext">
+              <a
+                class="project-link"
+                href="https://github.com/hitony7/Auto-Garbage-Sorter"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Project Repo &amp; README
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card fade-in-up" id="card4" data-category="blockchain">
+          <img src="src/image/shark.PNG" alt="Sharkies NFT collection art" />
+          <div class="card-text">
+            <h3>Sharkies Art NFT Project</h3>
+            <p class="subtext">
+              A generative NFT collection on Ethereum. Smart contracts written
+              in Solidity with a React frontend that integrates MetaMask for
+              on-chain minting. Over 100 unique sharks minted on mainnet.
+            </p>
+            <hr />
+            <p class="subtext">
+              <a
+                class="project-link"
+                href="https://opensea.io/collection/sharkies"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                OpenSea Marketplace
+              </a>
+            </p>
+            <hr />
+            <p class="subtext">
+              <a
+                class="project-link"
+                href="https://etherscan.io/address/0x47218a809eb6026111d569d7658da307020c8e21#code"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Etherscan Contract Code
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Popup Modal -->
+      <div class="popup-container">
+        <div class="popup" id="popup1">
+          <button class="popup-close" aria-label="Close project details">
+            &times;
+          </button>
+          <img
+            src="https://via.placeholder.com/700x400"
+            alt="Project preview"
+          />
+          <div class="popup-text">
+            <h3>Project Title</h3>
+            <p class="subtext">Project description</p>
+            <div class="popup-links"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="contact">
+      <h3 class="footer-title">Contact Me</h3>
+      <p>
+        <a href="https://www.linkedin.com/in/tonywong7/">
+          Message me on LinkedIn
+        </a>
+      </p>
+      <a href="mailto:tywong11@gmail.com">Send Email</a>
+      <p class="back-to-top">
+        <a href="#top">Back to top ↑</a>
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="src/app.js"></script>
+  </body>
 </html>
